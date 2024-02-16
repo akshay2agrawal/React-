@@ -1,34 +1,16 @@
-import { useState } from 'react';
-import './App.css';
-import Square from './components/Square';
-import { e } from 'mathjs';
+import { useState } from "react";
+import "./App.css";
+import "./index.css";
+import Board from "./components/Board";
+import { e } from "mathjs";
 
 function App() {
-  const [count, setCount] = useState(0)
-
-
-
   return (
     <>
-      <div>
-        <Square  value={0}/>
-        <Square value={0}/>
-        <Square value={0}/>
-      </div>
-
-      <div>
-        <Square value={0}/>
-        <Square value={0}/>
-        <Square value={0}/>
-      </div>
-            
-      <div>
-        <Square value={0}/>
-        <Square value={0}/>
-        <Square value={0}/>
-      </div>
+      <h1>Tic Tac Toe game</h1>
+      <Board />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
